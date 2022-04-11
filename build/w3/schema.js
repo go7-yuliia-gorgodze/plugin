@@ -1,0 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.schema = void 0;
+exports.schema = "### Web3API Header START ###\nscalar UInt\nscalar UInt8\nscalar UInt16\nscalar UInt32\nscalar Int\nscalar Int8\nscalar Int16\nscalar Int32\nscalar Bytes\nscalar BigInt\nscalar JSON\nscalar Map\n\ndirective @imported(\n  uri: String!\n  namespace: String!\n  nativeType: String!\n) on OBJECT | ENUM\n\ndirective @imports(\n  types: [String!]!\n) on OBJECT\n\ndirective @capability(\n  type: String!\n  uri: String!\n  namespace: String!\n) repeatable on OBJECT\n\ndirective @enabled_interface on OBJECT\n\ndirective @annotate(type: String!) on FIELD\n\n### Web3API Header END ###\n\ntype Query {\n  sampleQuery(\n    data: String!\n  ): String!\n}\n\ntype Mutation {\n  sampleMutation(\n    data: Bytes!\n  ): Boolean!\n}\n\n### Imported Queries START ###\n\n### Imported Queries END ###\n\n### Imported Objects START ###\n\n### Imported Objects END ###\n";
+//# sourceMappingURL=schema.js.map
